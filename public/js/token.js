@@ -1,3 +1,4 @@
+//Used for a base token object
 require(["jquery", "jquery-ui", "socketio"], function($, ui, io){
 	$(document).ready(function(){
 		$('.dragme').draggable({
