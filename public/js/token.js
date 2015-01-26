@@ -5,6 +5,8 @@ require(["jquery", "jquery-ui", "socketio"], function($, ui, io){
 			drag: function( event, ui ) {
 				socket.emit('dragging', { position: ui.position });
 			}
+		}).click(function(){
+			$(this).toggleClass("zoomed");
 		});
 
 		var socket = io.connect('http://192.168.2.20:8080');
